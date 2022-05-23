@@ -1,25 +1,17 @@
 <template>
   <div>
-    <h1>{{ title }}</h1>
-    <ModalPopup header="The Popup is done" text="this is some modal content" />
+    <p>Welcome to modal....</p>
   </div>
 </template>
 
 <script>
-import ModalPopup from './components/ModalPopup.vue'
 export default {
   name: 'App',
-  components:{ ModalPopup },
-  data(){
-    return {
-      title: 'My first vue App!'
-    }
-  }
 }
 </script>
 
 <style>
-#app {
+#app, .modals {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
