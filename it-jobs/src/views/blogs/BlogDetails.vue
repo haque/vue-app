@@ -8,7 +8,7 @@
         <div v-if="post.image" class="image-single">
             <img :src="post.image" :alt="post.title">
         </div>
-        <p>{{ post.desc }}</p>
+        <div v-html="post.desc" class="post-desc"></div>
     </article>
   </div>
   <div v-else>
